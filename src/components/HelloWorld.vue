@@ -22,8 +22,9 @@
   </div>
 
   <div class="cards">
+  
 
-
+       
     <div class="doctor_card">
       <div class="top_card">
           <p>Connect with <br> our proffesional <br> doctors</p>
@@ -38,9 +39,12 @@
       <p class="last-card-text">More than 200+ doctors in service</p>
     </div>
 
-
+    
 
     <div class="boost_card">
+      <div class="next_arrow">
+        <img src="../assets/arrow-right.svg" alt="">
+      </div>
       <p>Boost you health to </p>
       <div class="progress-bar">
         <div class="progress-fill"></div>
@@ -48,20 +52,28 @@
   
   
       <span>101%</span>
-  
+      <div class="next_arrow">
+        <img src="../assets/arrow-right.svg" alt="">
+      </div>
     </div>
 
 
 
     <div class="speciality_card">
 
+      <img  class="illustration" src="../assets/smile.svg" >
+      <div class="expression">
+          <p>90% Satisfying treatment</p>
+          <p>90% Happy customer</p>
+          <p>100% fast response</p>
 
+      </div>
     </div>
 
 
   </div>
 
-
+  
 
   
 
@@ -92,7 +104,8 @@
   background: linear-gradient(
     to bottom,
     hsla(211, 63%, 81%, 0.42) 0%, 
-    rgb(253, 215, 210) 100%
+    /* rgb(253, 215, 210) 100% */
+    rgb(252, 237, 230) 100%
   );
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative; /* Для позиционирования полукруга внутри */
@@ -215,7 +228,7 @@ border: 2px solid rgb(255, 255, 255);
 .top_card img{
  
 margin-top: 14px;
- background-color: rgb(210, 209, 208);
+ background-color: rgb(255, 255, 255);
 padding: 20px;
   border-radius: 80px;
 width: 40px;
@@ -235,15 +248,13 @@ height: 40px;
   font-size:20px;
 }
 .doctor_card{
-  border: 1px solid black;
- padding: 0px 30px 0px 30px;
+  background-color: rgb(252, 237, 230);
+  
+  padding: 0px 30px 0px 30px;
 }
 .cards{
   display: flex;
   justify-content: center;
-
-
-  
 }
 
 
@@ -274,14 +285,62 @@ height: 40px;
 
 .boost_card{
   padding: 18px 220px 0px 220px;
-  border-radius: 30px;
-  border: 1px solid black;
   font-family: "Raleway", sans-serif;
   font-size:20px;
-  background-color: rgb(238, 225, 212);
+  /*background-color: rgb(238, 225, 212);*/
+  background-color: rgb(252, 237, 230);
 }
+
 .boost_card span{
  font-size: 100px;
  color: rgb(12, 83, 59);
 }
+
+.illustration{
+  width:300px;
+}
+
+.doctor_card , .boost_card , .speciality_card{
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+}
+.doctor_card {
+  border-left: 5px solid black;
+}
+
+.speciality_card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 5px solid black;
+  background-color: rgb(252, 237, 230);
+}
+.expression{
+padding: 10px;
+
+flex-wrap: column;
+}
+
+.speciality_card p{
+  font-family: "Raleway", sans-serif;
+}
+
+.expression p{
+font-family: "Raleway", sans-serif;
+padding: 10px;
+border: 1px solid black;
+border-radius: 30px;
+
+}
+
+
+.next_arrow img{
+
+  margin-top: 14px;
+   background-color: rgb(255, 255, 255);
+  padding: 20px;
+    border-radius: 80px;
+  width: 40px;
+  height: 40px;
+  }
 </style> 
