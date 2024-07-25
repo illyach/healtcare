@@ -94,7 +94,7 @@
 
   justify-content: center; /* Горизонтальное центрирование */
 
-  margin: 0; /* Убираем отступы по умолчанию */
+  margin: 0; 
 }
 
 .rounded-gradient-box {
