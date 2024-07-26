@@ -1,5 +1,14 @@
 <template>
-  <div></div>
+  <div class="navigation">
+    <div class="nav_wrapper">
+      <img  class="nav_image" src="../assets/medical-logo.svg" alt="">
+      <p class="nav_text">Home</p>
+      <p class="nav_text">About</p>
+      <p class="nav_text" >Care service</p>
+      <p class="nav_text" >Contact</p>
+    </div>
+  </div>
+
   <div class="container">
     <div class="rounded-gradient-box">
 
@@ -26,9 +35,9 @@
 
        
     <div class="doctor_card">
-      <div class="top_card">
+      <div class="top_card"><img src="../assets/placeholder.svg" alt="">
           <p>Connect with <br> our proffesional <br> doctors</p>
-        <img src="../assets/arrow-top-right.svg" alt="">
+
       </div>
 
           <div class="doctors">
@@ -39,12 +48,12 @@
       <p class="last-card-text">More than 200+ doctors in service</p>
     </div>
 
-    
+    <div class="next_arrow">
+      <img src="../assets/arrow-right.svg" alt="">
+    </div>
 
     <div class="boost_card">
-      <div class="next_arrow">
-        <img src="../assets/arrow-right.svg" alt="">
-      </div>
+    
       <p>Boost you health to </p>
       <div class="progress-bar">
         <div class="progress-fill"></div>
@@ -52,9 +61,11 @@
   
   
       <span>101%</span>
-      <div class="next_arrow">
-        <img src="../assets/arrow-right.svg" alt="">
-      </div>
+    
+    </div>
+
+    <div class="next_arrow">
+      <img src="../assets/arrow-right.svg" alt="">
     </div>
 
 
@@ -73,6 +84,37 @@
 
   </div>
 
+  <div class="service_provide">
+    <h1>Our Healtcare Service Provide 
+    </h1>
+  </div>
+ 
+
+  <div class="service">
+    <div class="service_wrapper">
+
+      <div class="online">
+        <img   src="../assets/online.svg" >
+        <h1>Online Assistance</h1>
+        <p>Ease your pain and shoote your joints</p>
+      </div>
+
+      <div class="help">
+        <img   src="../assets/heart.svg" >
+        <h1>Health Status</h1>
+        <p>Know the latest information about your health</p>
+      </div>
+
+
+      <div class="result">
+        <img   src="../assets/dna.svg" >
+        <h1>Test Results</h1>
+        <p>View your test results online</p>
+      </div>
+
+    </div>
+  </div>
+
   
 
   
@@ -82,6 +124,7 @@
 </template>
 
 <script setup>
+
 </script>
 
 <style scoped>
@@ -227,18 +270,16 @@ border: 2px solid rgb(255, 255, 255);
 
 .top_card img{
  
-margin-top: 14px;
- background-color: rgb(255, 255, 255);
-padding: 20px;
+margin: 16px 0px 0px 0px;
   border-radius: 80px;
-width: 40px;
-height: 40px;
+width: 60px;
+height: 60px;
 }
 
 .top_card{
   display: flex;
   justify-content: center;
-  gap:50px;
+margin-right: 143px;
 
   
 }
@@ -249,12 +290,14 @@ height: 40px;
 }
 .doctor_card{
   background-color: rgb(252, 237, 230);
-  
+  border-radius:  30px 0px 0px 30px;
   padding: 0px 30px 0px 30px;
 }
 .cards{
   display: flex;
   justify-content: center;
+  margin-top: 40px;
+
 }
 
 
@@ -284,7 +327,7 @@ height: 40px;
 
 
 .boost_card{
-  padding: 18px 220px 0px 220px;
+  padding: 40px 70px 0px 70px;
   font-family: "Raleway", sans-serif;
   font-size:20px;
   /*background-color: rgb(238, 225, 212);*/
@@ -300,19 +343,12 @@ height: 40px;
   width:300px;
 }
 
-.doctor_card , .boost_card , .speciality_card{
-  border-top: 5px solid black;
-  border-bottom: 5px solid black;
-}
-.doctor_card {
-  border-left: 5px solid black;
-}
 
 .speciality_card{
   display: flex;
+  border-radius:  0px 30px 30px 0px;
   justify-content: center;
   align-items: center;
-  border-right: 5px solid black;
   background-color: rgb(252, 237, 230);
 }
 .expression{
@@ -342,5 +378,82 @@ border-radius: 30px;
     border-radius: 80px;
   width: 40px;
   height: 40px;
+  }
+
+
+
+.next_arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(252, 237, 230);
+  }
+
+
+  .nav_wrapper{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+  }
+
+  .nav_wrapper , .nav_text, .nav_image{
+    margin-right: 145px;
+  }
+
+  .nav_wrapper p{
+    font-family: "Raleway", sans-serif;
+    font-size:25px;
+  }
+
+
+  .service img {
+    width: 110px;
+    background-color: rgb(244, 243, 243);
+    border-radius: 30px;
+    padding: 8px;
+  }
+
+
+  .service h1 {
+
+    font-family: "Raleway", sans-serif;
+  font-size:35px;
+  font-weight: 600;
+  }
+
+  .service p {
+    font-family: "Raleway", sans-serif;
+  font-size:22px;
+  color: rgb(171, 171, 171);
+
+  }
+
+  .service_wrapper{
+    display: flex;
+
+    justify-content: center;
+    gap:120px;
+  }
+
+  .online , .help , .result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .service{
+    margin-top: 60px;
+  }
+
+  .service_provide{
+    margin-top: 40px;
+    font-family: "Raleway", sans-serif;
+    font-size:30px;
+    display: flex;
+    justify-content: center;
   }
 </style> 
